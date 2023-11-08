@@ -1,0 +1,135 @@
+body{
+  overflow-x: hidden;
+}
+/* #navBar{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+} */
+.brandName{
+     font-size: 30px;
+
+}
+.home{
+     background-image: url("C:/Users/Admin/Desktop/ecommerce_app/src/assets/ecommerce images/mukuko-studio-mU88MlEFcoU-unsplash.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 700px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+#nav-link{
+  font-size: 20px;
+  color: black;
+}
+.newArrivals img{
+  height: 300px;
+  /* width: 250px; */
+}
+.featured img{
+  /* height: 600px;
+  width: 400px; */
+}
+.verona div p{
+  display: none;
+}
+.IMG{
+  /* width: 300px; */
+  height: 300px;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 70px;
+  margin: 100px 0px 0px 0px;
+}
+footer .Brand{
+  font-size: 40px;
+}
+footer input{
+   border: none;
+   border-bottom: 1px solid gray;
+   background-color: rgb(0, 0, 0);
+   outline: none;
+   color: white;
+   max-width: 300px;
+}
+.item{
+   max-height: 200px;
+   /* width: 150px; */
+}
+#BTN{
+  background-color: black;
+}
+.itemIncart{
+  width: 300px;
+  height: 300px;
+}
+.aboutInCart{
+  font-size: 20px;
+}
+button.add{
+  background-color: black;
+  color: white;
+}
+button.remove,button.subtract{
+  background-color: red;
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 276px){
+  .newArrivals img{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    margin: 20px auto;
+  }
+  .featured p {
+    display: none;
+  }
+  .verona{
+    position: relative;
+  }
+  .verona div p{
+    display: block;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  .verona div .btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .IMG{
+    width: 200px;
+    /* height: 300px; */
+  }
+  #services{
+     margin: 30px;
+  }
+  footer .Brand{
+     text-align: center;
+     font-size: 40px;
+  }
+  .item{
+     max-height: 200px;
+     width: 100px;
+  }
+  #BTN{
+     font-size: 12px;
+     background-color: red;
+  }
+  .itemIncart{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+}

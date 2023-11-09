@@ -18,29 +18,29 @@ const Home = () => {
            <div className="newArrivals">
                 <p className="text-center mt-5 h1">New Arrivals</p>
                 <div className="row d-flex justify-content-center my-5">
-                      <div className="col-sm-2 mx-1 p-0">
-                           <img src={img1} alt="" className="w-sm-100"/>
+                      <div className="col-5 col-sm-3 col-md-2 mx-2 mx-md-1 mx-sm-4 my-2 shadow-sm p-0">
+                           <img loading="lazy" src={img1} alt="" className="img-fluid my-0"/>
                            <p className="text-center my-2">Bags</p>
                       </div>
-                      <div className="col-sm-2 mx-1 p-0">
-                           <img src={img2} alt="" className="w-sm-100"/>
+                      <div className="col-5 col-sm-3 col-md-2 mx-2 mx-md-1 mx-sm-4 my-2 shadow-sm p-0">
+                           <img loading="lazy" src={img2} alt="" className="img-fluid my-0"/>
                            <p className="text-center my-2">Nike Jordan</p>
                       </div>
-                      <div className="col-sm-2 mx-1 p-0">
-                           <img src={img3} alt="" className="w-sm-100"/>
+                      <div className="col-5 col-sm-3 col-md-2 mx-2 mx-md-1 mx-sm-4 my-2 shadow-sm p-0">
+                           <img loading="lazy" src={img3} alt="" className="img-fluid my-0"/>
                            <p className="text-center my-2">Nike Air Force</p>
                       </div>
-                      <div className="col-sm-2 mx-1 p-0">
-                           <img src={img4} alt="" className="w-sm-100"/>
+                      <div className="col-5 col-sm-3 col-md-2 mx-2 mx-md-1 mx-sm-4 my-2 shadow-sm p-0">
+                           <img loading="lazy" src={img4} alt="" className="img-fluid my-0"/>
                            <p className="text-center my-2">Sweatshirts</p>
                       </div>
                 </div>
            </div>
            <div className="row featured my-5 d-flex justify-content-center discover">
                 <h1 className="text-center my-5">Featured</h1>
-                <div className="col-10 col-sm-4 d-flex align-items-center justify-content-center p-0">
+                <div className="col-10 col-sm-10 col-md-4 d-flex align-items-center justify-content-center p-0">
                      <div className="verona">
-                       <img src={img5} className="img-fluid shadow" alt=""/>
+                       <img loading="lazy" src={img5} className="img-fluid shadow" alt=""/>
                        <div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -67,16 +67,16 @@ const Home = () => {
                 <div className="col-10 col-sm-5">
                      <div className="row p-0">
                           <div id="services" className="col-6 m-0 p-0 w-50 bg-danger">
-                               <img src={img6} className="IMG w-100" alt=""/>
+                               <img loading="lazy" src={img6} className="IMG w-100" alt=""/>
                           </div>
                           <div className="col-6 w-50 p-0 m-0">
-                               <img src={img7} className="IMG w-100" alt=""/>
+                               <img loading="lazy" src={img7} className="IMG w-100" alt=""/>
                           </div>
                           <div className="col-6 m-0 p-0 w-50">
-                               <img src={img8} className="IMG w-100" alt=""/>
+                               <img loading="lazy" src={img8} className="IMG w-100" alt=""/>
                           </div>
                           <div className="col-6 m-0 p-0 w-50">
-                               <img src={img9} className="IMG w-100" alt=""/>
+                               <img loading="lazy" src={img9} className="IMG w-100" alt=""/>
                           </div>
                      </div>
                 </div>

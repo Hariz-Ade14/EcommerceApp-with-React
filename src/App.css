@@ -79,9 +79,40 @@ button.remove,button.subtract{
   background-color: red;
   color: white;
 }
+img.others{
+  /* width: 200px;
+  height: 200px; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+#prod{
+  cursor: pointer;
+  
+}
+.prod_details{
+  background-color: green;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 50px;
+}
 
-
-@media screen and (max-width: 768px) and (min-width: 276px){
+@media screen and (max-width: 576px){
+  .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .home h1{
+    font-size: 15px;
+  }
   .newArrivals img{
     height: 300px;
     width: 200px;
@@ -97,7 +128,7 @@ button.remove,button.subtract{
   .verona div p{
     display: block;
     position: absolute;
-    top: 200px;
+    top: 100px;
     text-align: center;
     margin: 20px;
     color: rgb(255, 255, 255);
@@ -132,4 +163,72 @@ button.remove,button.subtract{
     display: flex;
     margin: auto;
   }
+  img.others{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .newArrivals img{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    margin: 20px auto;
+  }
+  .featured p {
+    display: none;
+  }
+  .verona{
+    position: relative;
+  }
+  .verona div p{
+    display: block;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  .verona div .btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .IMG{
+    width: 200px;
+    /* height: 300px; */
+  }
+  #services{
+     margin: 30px;
+  }
+  footer .Brand{
+     text-align: center;
+     font-size: 40px;
+  }
+  .item{
+     max-height: 200px;
+     width: 100px;
+  }
+  #BTN{
+     font-size: 12px;
+     background-color: red;
+  }
+  .itemIncart{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+  img.others{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+  
 }

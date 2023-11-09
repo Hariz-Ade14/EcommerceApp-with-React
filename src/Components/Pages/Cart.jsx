@@ -1,6 +1,7 @@
 import {useCart} from "react-use-cart";
 import { PRODUCTS } from "../Products/ITEMS";
 import {FaTrash} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
     const {
@@ -15,10 +16,15 @@ const Cart = () => {
            emptyCart
     } = useCart();
 
-    if(isEmpty) {
+    const navigate = useNavigate();
+
+    if(isEmpty === true) {
         return(
-             <div className="d-flex align-items-center justify-content-center">
-                  <h1>Your Cart is Empty</h1>
+             <div style={{height:"100vh" , color:"red"}} className="d-flex align-items-center justify-content-center">
+                  <div>
+                     <h1 className="mb-5">Your Cart is Empty!</h1>
+                     <button onClick={() => navigate("/shop")} className="btn btn-primary d-flex mx-auto">Continue Shopping</button>
+                  </div>
               </div>
         )
     }
@@ -54,8 +60,8 @@ const Cart = () => {
             {console.log(items)}
             <h3>Total Price = ${cartTotal}</h3>
             <button onClick={() => {emptyCart()}} className="btn my-5 btn-danger">Clear Cart</button>
+            <button style={{background:"black"}} className="btn text-white mx-5 my-5">Buy Now</button>
         </div>
-        
      );
 }
  

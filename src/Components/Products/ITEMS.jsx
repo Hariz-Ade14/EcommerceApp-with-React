@@ -7,7 +7,9 @@ import img6 from "../../assets/ecommerce images/pascal-brauer-ttdio_nOPjQ-unspla
 import img7 from "../../assets/ecommerce images/malik-skydsgaard-qATVOVghbTk-unsplash.jpg";
 import img8 from "../../assets/ecommerce images/dom-hill-nimElTcTNyY-unsplash.jpg";
 import img9 from "../../assets/ecommerce images/sirio-7_ZNLVlJchs-unsplash.jpg";
-import img10 from "../../assets/ecommerce images/sirio-7_ZNLVlJchs-unsplash.jpg";
+import img10 from "../../assets/ecommerce images/irene-kredenets-dwKiHoqqxk8-unsplash.jpg";
+import img11 from "../../assets/ecommerce images/usama-akram-kP6knT7tjn4-unsplash.jpg";
+import img12 from "../../assets/ecommerce images/malvestida-u79wy47kvVs-unsplash.jpg";
 
 
 export const PRODUCTS = [
@@ -70,5 +72,17 @@ export const PRODUCTS = [
            Name: "item10",
            price: 1000,
            image: img10
+       },
+       {
+           id: 11,
+           Name: "item11",
+           price: 1100,
+           image: img11
+       },
+       {
+           id: 12,
+           Name: "item12",
+           price: 1200,
+           image: img12
        },
 ];

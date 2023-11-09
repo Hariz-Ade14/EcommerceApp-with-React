@@ -5,6 +5,7 @@ import Home from './Components/Pages/Home';
 import Shop from './Components/Pages/Shop';
 import Cart from './Components/Pages/Cart';
 import Signin from './Components/Pages/SignIn';
+import ProductDetails from './Components/Products/ProductDetails';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {FaCopyright} from "react-icons/fa";
 import {CartProvider } from "react-use-cart";
@@ -46,6 +47,7 @@ function App() {
                    <Route path='/Shop' Component={Shop}/>
                    <Route path='/Signin' Component={Signin}/>
                    <Route path='/Cart' Component={Cart}/>
+                   <Route path='/details' Component={ProductDetails}/>
                </Routes>
             </BrowserRouter>
       </CartProvider>

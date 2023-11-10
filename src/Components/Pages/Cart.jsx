@@ -2,6 +2,7 @@ import {useCart} from "react-use-cart";
 import { PRODUCTS } from "../Products/ITEMS";
 import {FaTrash} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const {

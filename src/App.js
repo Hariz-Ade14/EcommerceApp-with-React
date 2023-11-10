@@ -5,11 +5,13 @@ import Home from './Components/Pages/Home';
 import Shop from './Components/Pages/Shop';
 import Cart from './Components/Pages/Cart';
 import Signin from './Components/Pages/SignIn';
+import SignUp from './Components/SignUp';
 import ProductDetails from './Components/Products/ProductDetails';
 import "bootstrap/dist/css/bootstrap.min.css"
-import {FaCopyright} from "react-icons/fa";
+import {FaCopyright ,FaPortrait} from "react-icons/fa";
 import {CartProvider } from "react-use-cart";
 import NoOfItemsInCart from './Components/noOfItemsInCart';
+import { PRODUCTS } from './Components/Products/ITEMS';
 
 function App() {
   const menu = [
@@ -25,7 +27,7 @@ function App() {
     },
     {
        id: 3,
-       page: "Sign In",
+       page: <FaPortrait size={30}/>,
        url: "/signin"
     },
     {
@@ -46,8 +48,9 @@ function App() {
                    <Route path='/' Component={Home}/>
                    <Route path='/Shop' Component={Shop}/>
                    <Route path='/Signin' Component={Signin}/>
+                   <Route path='/signUp' Component={SignUp}/>
                    <Route path='/Cart' Component={Cart}/>
-                   <Route path='/details' Component={ProductDetails}/>
+                   <Route path='/details/:name' element={<ProductDetails PRODUCTS/>}/>
                </Routes>
             </BrowserRouter>
       </CartProvider>
